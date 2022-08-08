@@ -1,4 +1,4 @@
-# JavaDepL
+# JavaDeveloperLearn
 
 Kiryl Lapyronak
 
