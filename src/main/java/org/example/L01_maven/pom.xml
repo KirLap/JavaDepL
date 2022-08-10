@@ -25,29 +25,17 @@
         <finalName>App</finalName>
         <plugins>
             <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>my-maven-assembly-plugin</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                    </execution>
-                </executions>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
                 <configuration>
-                    <appendAssemblyId>false</appendAssemblyId>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>org.example.L01_obfuscation.Main</mainClass>
+                            <mainClass>org.example.L01_maven.MyApp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
 
